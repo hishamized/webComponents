@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+:root{
+    --background-color: black;
+    --fill-color: hsl(245, 82%, 67%);
+    --fill-color2: hsl(227, 79%, 58%);
+    --fill-color3: hsl(245, 82%, 67%);
+}
+*{
+    margin: 0%;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, hsl(223, 13%, 10%),  hsl(223, 13%, 12%));
+    flex-direction: column;
+    gap: 2em;
+}
+
+#logo{
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px var(--fill-color);
+}
+.text{
+    font-weight: bold;
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+    font-size: large;
+    color: white;
+    letter-spacing: 3px;
+}
+#ellmenus{
+    font-size: xx-large;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background:#d2eaf1;
+
+}
+
+.circle-wrap {
+    /*margin: 20vw auto;*/
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+    display: flex;
+    box-shadow: 0 0 20px 5px var(--fill-color);
+    background-color: white;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 20vw, 20vw, 10vw);
+}
+
+.circle-wrap .inside-circle {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    background: #d2eaf1;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+    color: #1e51dc;
+    position: relative;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+    clip: rect(0px, 10vw, 20vw, 0px);
+    background-color: var(--fill-color);
+}
+
+.mask.full,
+.circle .fill {
+    animation: fill ease-in-out 4s;
+    transform: rotate(180deg);
+}
+
+@keyframes fill{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .circle-wrap{
+        width: 40vw;
+        height: 40vw;
+    }
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill{
+        width: 40vw;
+        height: 40vw;
+    }
+    .circle-wrap .circle .mask {
+        clip: rect(0px, 40vw, 40vw, 20vw);
+    }
+    .mask .fill {
+        clip: rect(0px, 20vw, 40vw, 0px);
+    }
+    .circle-wrap .inside-circle{
+        width: 34vw;
+        height: 34vw;
+        margin-top: 2.8vw;
+        margin-left: 2.8vw;
+    }
+    #logo{
+        height: 34vw;
+        width: 34vw;
+    }
+}
