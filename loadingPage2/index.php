@@ -22,7 +22,7 @@
                  </div>
       </div>
       <div id="loading-progress" class="text"> </div>
-       <div id="ellmenus" class="text">powered by: ellMenus</div>
+       <div id="ellmenus" class="text">POWERED BY: ellMenus</div>
    </section>
 </body>
 </html>

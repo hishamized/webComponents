@@ -32,6 +32,10 @@
     font-size: large;
     color: white;
     letter-spacing: 3px;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 5px var(--fill-color);
 }
 #ellmenus{
     font-size: xx-large;
