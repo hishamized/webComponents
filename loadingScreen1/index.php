@@ -9,7 +9,7 @@
 </head>
 <body onload="triggerProgress()">
     <div class="container">
-      <img id="logo" src="assets/images/logo.png" alt="Logo Was not loaded">
+      <img id="logo" src="../assets/logo.png" alt="Logo Was not loaded">
       <h2 class="text">Restaurant Name</h2>
       <div class="loading-juice-box">
         <div id="loading-juice" class="loading-juice"> </div>

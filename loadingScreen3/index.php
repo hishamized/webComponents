@@ -14,12 +14,11 @@
         <div class="circle circle_2 flex-center">
             <div class="circle circle_3 flex-center">
                 <div class="ciecle circle_4 flex-center">
-                   <img id="logo" src="assets/logo.png" alt="logo">
+                   <img id="logo" src="../assets/logo.png" alt="logo">
                 </div>
             </div>
         </div>
       </div>
-
     </section>
 </body>
 </html>

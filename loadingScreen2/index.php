@@ -17,7 +17,7 @@
                      <div class="fill"></div>
                    </div>
                    <div class="inside-circle">
-                     <img id="logo" src="assets/images/logo.png" alt="Image not loaded">
+                     <img id="logo" src="../assets/logo.png" alt="Image not loaded">
                     </div>
                  </div>
       </div>
